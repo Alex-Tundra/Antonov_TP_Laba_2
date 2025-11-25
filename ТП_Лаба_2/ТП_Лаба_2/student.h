@@ -1,7 +1,8 @@
 #ifndef STUDENT_H
 #define STUDENT_H
 
-#include <iostream>  // Добавлено для std::ostream
+#include <iostream>
+#include <stdexcept>
 
 class STUDENT {
 private:
@@ -25,8 +26,11 @@ public:
     int getNumSubjects() const;
     double getAverage() const;
     const char* getName() const;
+    int getNumGrades() const;
+    const int* getGrades() const;
 
     friend std::ostream& operator<<(std::ostream& os, const STUDENT& s);
+    friend std::istream& operator>>(std::istream& is, STUDENT& s);
 };
 
 #endif

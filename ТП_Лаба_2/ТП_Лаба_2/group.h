@@ -29,6 +29,7 @@ public:
     char** getSubjects() const;
     int getNumSubjects() const;
     void setSubjects(char** subjects, int num_subjects);
+    double getGroupAverage() const;  // Добавлен новый метод
 };
 
 #endif
