@@ -109,7 +109,7 @@ int main() {
                     break;
                 }
                 char name[100];
-                std::cout << "Введите имя студента: ";
+                std::cout << "Введите ФИО студента: ";
                 std::cin.getline(name, 100);
                 int num_grades;
                 std::cout << "Введите количество оценок: ";
@@ -183,7 +183,7 @@ int main() {
                     break;
                 }
                 char name[100];
-                std::cout << "Введите новое имя: ";
+                std::cout << "Введите новые ФИО: ";
                 std::cin.getline(name, 100);
                 s->setName(name);
                 int num_grades;
